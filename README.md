@@ -10,3 +10,7 @@ Install librarian-chef
     gem install librarian
     
 To update to the genigames server you need to setup the auth.cfg file to know about the genigames.pem file.
+
+To add a new recipe or attribute to one of the servers, you edit the `nodes/SERVER_NAME.json` file, then run
+
+    fix node:SERVER_NAME
