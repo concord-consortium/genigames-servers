@@ -1,0 +1,6 @@
+{
+    "ipaddress": "10.254.86.160",
+    "run_list": [
+        "recipe[apache2]"
+    ]
+}

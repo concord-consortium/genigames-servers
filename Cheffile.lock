@@ -1,0 +1,11 @@
+GIT
+  remote: https://github.com/concord-consortium/chef-repo
+  path: cookbooks
+  ref: master
+  sha: 1e26989f62129ff4c1fefe2187182087c3e6c4fb
+  specs:
+    apache2 (0.99.2)
+
+DEPENDENCIES
+  apache2 (>= 0)
+
