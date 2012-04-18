@@ -6,6 +6,14 @@ GIT
   specs:
     apache2 (0.99.2)
 
+GIT
+  remote: https://github.com/opscode/cookbooks
+  ref: master
+  sha: 9948e1d00148766b7f2cc5d8690bd0b40382a314
+  specs:
+    users (1.1.2)
+
 DEPENDENCIES
   apache2 (>= 0)
+  users (>= 0)
 
