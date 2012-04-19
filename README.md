@@ -6,7 +6,7 @@ Install littlechef
     
 Install librarian-chef
 
-    rvm --rvmrc --create use 1.9.3@genigames
+    rvm --rvmrc --create use 1.9.3@genigames-servers
     gem install librarian
     
 To update to the genigames server you need to setup the auth.cfg file to know about the genigames.pem file.
