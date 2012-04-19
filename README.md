@@ -14,3 +14,7 @@ To update to the genigames server you need to setup the auth.cfg file to know ab
 To add a new recipe or attribute to one of the servers, you edit the `nodes/SERVER_NAME.json` file, then run
 
     fix node:SERVER_NAME
+
+If you need to use an additional cookbook, edit the file `Cheffile` then run
+
+    librarian-chef install
