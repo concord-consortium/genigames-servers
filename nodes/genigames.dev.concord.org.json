@@ -3,6 +3,7 @@
     "run_list": [
         "recipe[apache2]",
         "recipe[users::sysadmins]",
+        "recipe[git]",
         "recipe[genigames]"
     ]
 }

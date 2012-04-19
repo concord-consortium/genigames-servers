@@ -5,6 +5,9 @@ GIT
   sha: 1e26989f62129ff4c1fefe2187182087c3e6c4fb
   specs:
     apache2 (0.99.2)
+    git (0.9.0)
+      runit (>= 0)
+    runit (0.14.2)
 
 GIT
   remote: https://github.com/opscode/cookbooks
@@ -15,5 +18,6 @@ GIT
 
 DEPENDENCIES
   apache2 (>= 0)
+  git (>= 0)
   users (>= 0)
 
