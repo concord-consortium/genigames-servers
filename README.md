@@ -1,4 +1,6 @@
-To use this repository you need two tools littlechef and librarian-chef
+To use this repository you need two tools: littlechef and librarian-chef
+
+=== Get Started
 
 Install littlechef
 
@@ -9,7 +11,13 @@ Install librarian-chef
     rvm --rvmrc --create use 1.9.3@genigames-servers
     gem install librarian
     
-To update to the genigames server you need to setup the auth.cfg file to know about the genigames.pem file.
+Run initial librarian install
+
+    librarian-chef install
+
+Setup the `auth.cfg` file to know about your genigames.pem file.
+
+=== Updating the Server
 
 To add a new recipe or attribute to one of the servers, you edit the `nodes/SERVER_NAME.json` file, then run
 
