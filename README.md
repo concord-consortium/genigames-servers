@@ -1,6 +1,6 @@
 To use this repository you need two tools: littlechef and librarian-chef
 
-=== Get Started
+### Get Started
 
 Install littlechef
 
@@ -17,7 +17,7 @@ Run initial librarian install
 
 Setup the `auth.cfg` file to know about your genigames.pem file.
 
-=== Updating the Server
+### Updating the Server
 
 To add a new recipe or attribute to one of the servers, you edit the `nodes/SERVER_NAME.json` file, then run
 
