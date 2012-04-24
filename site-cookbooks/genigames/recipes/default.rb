@@ -27,6 +27,10 @@ web_app "genigames-apache" do
   ]
 end
 
+
+# perhaps these should just be put in the runlist instead??
+
 include_recipe "nodejs"
 include_recipe "nodejs::npm"
 include_recipe "couchdb"
+include_recipe "authbind"

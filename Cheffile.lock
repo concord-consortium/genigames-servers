@@ -1,5 +1,5 @@
 GIT
-  remote: http://github.com/balbeko/chef-npm/
+  remote: https://github.com/balbeko/chef-npm/
   ref: master
   sha: 12957919d37bcd4b9704dc59508f1b6959c208b0
   specs:
@@ -36,8 +36,16 @@ GIT
       erlang (>= 0.0.0)
     users (1.1.2)
 
+GIT
+  remote: https://github.com/realityforge-cookbooks/authbind
+  ref: master
+  sha: 82be7eb34aa720ee6fc76d39df2fb6fab0bcfbf9
+  specs:
+    authbind (0.1.1)
+
 DEPENDENCIES
   apache2 (>= 0)
+  authbind (>= 0)
   couchdb (>= 0)
   git (>= 0)
   nodejs (>= 0)
