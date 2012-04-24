@@ -1,7 +1,45 @@
+# perhaps these should just be put in the runlist instead??
+
+include_recipe "nodejs"
+include_recipe "nodejs::npm"
+include_recipe "couchdb"
+include_recipe "authbind"
+
 directory "/var/www" do
   owner "deploy"
   group "root"
-  mode "777"
+  mode "755"
+end
+
+directory "/var/www/log" do
+  owner "www-data"
+  group "www-data"
+  mode "755"
+end
+
+template "/etc/init/genigames.dev.concord.org.conf" do
+  source "genigames.dev.concord.org.conf.erb"
+  owner "root"
+  group "root"
+  mode "644"
+end
+
+file "/etc/authbind/byport/80" do
+  owner "www-data"
+  group "www-data"
+  mode "755"
+end
+
+script "update_npm" do
+  interpreter "bash"
+  user "deploy"
+  code "sudo npm update -g npm"
+end
+
+script "setup_coffee" do
+  interpreter "bash"
+  user "deploy"
+  code "sudo npm install -g coffee-script"
 end
 
 # The following is no longer used, but is left for reference b/c that's how the Apache *files*
@@ -23,10 +61,3 @@ end
 #     {:path => "/resources/", :remote => "http://geniverse.dev.concord.org/resources/"}
 #   ]
 # end
-
-# perhaps these should just be put in the runlist instead??
-
-include_recipe "nodejs"
-include_recipe "nodejs::npm"
-include_recipe "couchdb"
-include_recipe "authbind"
