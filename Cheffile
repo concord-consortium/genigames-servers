@@ -12,6 +12,8 @@ cookbook 'nodejs',
     :git => 'https://github.com/mdxp/nodejs-cookbook'
 cookbook 'npm',
     :git => 'http://github.com/balbeko/chef-npm/'
+cookbook 'couchdb',
+    :git => 'https://github.com/opscode/cookbooks'    
 
 # cookbook 'chef-client'
 
