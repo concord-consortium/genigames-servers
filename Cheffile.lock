@@ -27,6 +27,13 @@ GIT
       build-essential (>= 0.0.0)
 
 GIT
+  remote: https://github.com/opscode-cookbooks/sudo
+  ref: master
+  sha: e08de50f3d9327edb55676b1b6adb113ddc819dc
+  specs:
+    sudo (1.1.1)
+
+GIT
   remote: https://github.com/opscode/cookbooks
   ref: master
   sha: 9948e1d00148766b7f2cc5d8690bd0b40382a314
@@ -48,5 +55,6 @@ DEPENDENCIES
   git (>= 0)
   nodejs (>= 0)
   npm (>= 0)
+  sudo (>= 0)
   users (>= 0)
 

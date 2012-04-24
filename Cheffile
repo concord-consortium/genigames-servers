@@ -7,6 +7,8 @@ git 'https://github.com/concord-consortium/chef-repo', :path => 'cookbooks'
 # cookbook 'apache2'
 cookbook 'users',
     :git => 'https://github.com/opscode/cookbooks'
+cookbook 'sudo',
+    :git => 'https://github.com/opscode-cookbooks/sudo'	
 cookbook 'git'
 cookbook 'nodejs',
     :git => 'https://github.com/mdxp/nodejs-cookbook'
