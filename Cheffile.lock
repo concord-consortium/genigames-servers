@@ -1,13 +1,30 @@
 GIT
+  remote: http://github.com/balbeko/chef-npm/
+  ref: master
+  sha: 12957919d37bcd4b9704dc59508f1b6959c208b0
+  specs:
+    npm (0.1.0)
+      nodejs (>= 0.0.0)
+
+GIT
   remote: https://github.com/concord-consortium/chef-repo
   path: cookbooks
   ref: master
   sha: 1e26989f62129ff4c1fefe2187182087c3e6c4fb
   specs:
     apache2 (0.99.2)
+    build-essential (0.7.0)
     git (0.9.0)
       runit (>= 0)
     runit (0.14.2)
+
+GIT
+  remote: https://github.com/mdxp/nodejs-cookbook
+  ref: master
+  sha: af27e223295869cde9de7c2840dd5abea2127ece
+  specs:
+    nodejs (1.0.0)
+      build-essential (>= 0.0.0)
 
 GIT
   remote: https://github.com/opscode/cookbooks
@@ -19,5 +36,7 @@ GIT
 DEPENDENCIES
   apache2 (>= 0)
   git (>= 0)
+  nodejs (>= 0)
+  npm (>= 0)
   users (>= 0)
 

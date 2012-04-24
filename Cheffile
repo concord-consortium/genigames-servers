@@ -8,6 +8,10 @@ cookbook 'apache2'
 cookbook 'users',
     :git => 'https://github.com/opscode/cookbooks'
 cookbook 'git'
+cookbook 'nodejs',
+    :git => 'https://github.com/mdxp/nodejs-cookbook'
+cookbook 'npm',
+    :git => 'http://github.com/balbeko/chef-npm/'
 
 # cookbook 'chef-client'
 
