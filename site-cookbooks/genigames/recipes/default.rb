@@ -26,3 +26,6 @@ web_app "genigames-apache" do
     {:path => "/resources/", :remote => "http://geniverse.dev.concord.org/resources/"}
   ]
 end
+
+include_recipe "nodejs"
+include_recipe "nodejs::npm"
