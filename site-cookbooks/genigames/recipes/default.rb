@@ -42,6 +42,10 @@ script "setup_coffee" do
   code "sudo npm install -g coffee-script"
 end
 
+package "rake" do
+  action :install
+end
+
 # The following is no longer used, but is left for reference b/c that's how the Apache *files*
 # got onto genigames.dev.concord.org
 
