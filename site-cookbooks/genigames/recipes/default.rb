@@ -2,7 +2,7 @@
 
 include_recipe "nodejs"
 include_recipe "nodejs::npm"
-include_recipe "couchdb"
+# include_recipe "couchdb"
 include_recipe "authbind"
 
 directory "/var/www" do
