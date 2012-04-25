@@ -24,6 +24,13 @@ template "/etc/init/genigames.dev.concord.org.conf" do
   mode "644"
 end
 
+template "/etc/init/couchdb.conf" do
+  source "couchdb.conf.erb"
+  owner "root"
+  group "root"
+  mode "644"
+end
+
 file "/etc/authbind/byport/80" do
   owner "www-data"
   group "www-data"
